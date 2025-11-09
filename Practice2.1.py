@@ -1,7 +1,8 @@
-import numpy as np
+import numpy as np  #импорт бибилотеки numpy с последующим обращением как np
 import pandas as pd
 import matplotlib.pyplot as plt
 import folium 
-dataset_path = r"C:\Users\Hero\Desktop\4 Kurs\IOT\2 praktika\Map-Crime_Incidents-Previous_Three_Months.csv"
-SF= pd.read_csv(dataset_path)
-print(SF.head(n=5))
+dataset_path = r"C:\Users\Hero\Desktop\2.1 pr\Map-Crime_Incidents-Previous_Three_Months.csv" # определение пути к файлу с данными 
+SF= pd.read_csv(dataset_path) # определение кадра данных, взятых из csv файла
+pd.set_option('display.max_rows', 6) #задание настройки пандасу, чтобы в кадре максимум показывалось 6 строк 
+print(SF)
